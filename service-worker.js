@@ -1,11 +1,11 @@
 const CACHE_NAME = 'robofriends-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
-  '/static/js/bundle.js',
-  '/static/js/main.chunk.js',
-  '/static/js/0.chunk.js',
-  '/static/css/main.css',
+  '/pwa241121/index.html',
+  '/pwa241121/js/bundle.js',
+  '/pwa241121/static/js/main.chunk.js',
+  '/pwa241121/static/js/0.chunk.js',
+  '/pwa241121/static/css/main.css',
 ];
 
 // Install event: Cache resources
