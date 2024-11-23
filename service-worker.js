@@ -1,11 +1,9 @@
-const CACHE_NAME = 'my-cache-v1'; // Give your cache a unique name
+const CACHE_NAME = 'my-cache-v1';
 const urlsToCache = [
-  './',
-  './index.html',
-  './js/bundle.js',
-  './static/js/main.chunk.js',
-  './static/js/0.chunk.js',
-  './static/css/main.css',
+  './',                          // Root
+  './index.html',                // Entry point
+  './static/js/main.731c951c.js', // Compiled JavaScript
+  './static/css/main.c868be2a.css', // Compiled CSS
 ];
 
 // Install event: Cache resources and log failed URLs
