@@ -1,11 +1,11 @@
 const CACHE_NAME = 'robofriends-cache-v1';
 const urlsToCache = [
   '/',
-  '/pwa241121/index.html',
-  '/pwa241121/js/bundle.js',
-  '/pwa241121/static/js/main.chunk.js',
-  '/pwa241121/static/js/0.chunk.js',
-  '/pwa241121/static/css/main.css',
+  '/index.html',
+  '/js/bundle.js',
+  '/static/js/main.chunk.js',
+  '/static/js/0.chunk.js',
+  '/static/css/main.css',
 ];
 
 // Install event: Cache resources
@@ -39,4 +39,16 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
+});
+
+caches.open('cache-name').then((cache) => {
+  return cache.addAll([
+      './index.html',
+      './static/js/main.js',
+      './static/css/main.css',
+      './favicon.ico',
+      './manifest.json',
+  ]).catch((error) => {
+      console.error('Caching failed for:', error);
+  });
 });
